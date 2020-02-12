@@ -8,7 +8,7 @@ A lib to use json easly.
 
 ## Installation
 
-- Install jsonutils with `pip install jsonutils`
+- Install jsonutils with `pip install jsonutils3`
 - Enjoy
 
 ## Features
