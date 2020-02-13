@@ -1,4 +1,4 @@
-# gen-utilities
+# genutilities
 
 A lib to code in python easily.
 
@@ -8,7 +8,7 @@ A lib to code in python easily.
 
 ## Installation
 
-- Install jsonutils with `pip install gen-utilities`
+- Install jsonutils with `pip install genutilities`
 - Enjoy
 
 ## Features

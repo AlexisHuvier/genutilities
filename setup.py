@@ -3,13 +3,13 @@
  
 from setuptools import setup, find_packages
 
-import gen-utilities
+import genutilities
 
 setup(
 
-    name='gen-utilities',
+    name='genutilities',
 
-    version=gen-utilities.__version__,
+    version=genutilities.__version__,
 
     packages=find_packages(),
     author="LavaPower",
@@ -20,7 +20,7 @@ setup(
 
     include_package_data=True,
 
-    url='http://github.com/LavaPower/gen-utilities',
+    url='http://github.com/LavaPower/genutilities',
 
     # https://pypi.python.org/pypi?%3Aaction=list_classifiers.
     classifiers=[
