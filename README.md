@@ -1,6 +1,6 @@
-# jsonutils
+# gen-utilities
 
-A lib to use json easly.
+A lib to code in python easily.
 
 ## Dependencies
 
@@ -8,23 +8,20 @@ A lib to use json easly.
 
 ## Installation
 
-- Install jsonutils with `pip install jsonutils3`
+- Install jsonutils with `pip install gen-utilities`
 - Enjoy
 
 ## Features
 
-- Modify json by function and by direct key access (`set`/`get` functions and `JsonObject[key]`)
-- Support dot in access (example : `json["config.theme"]` => get value of "theme" in value of "config")
-- Save function + option to save at destruction
-- Convert json to xml (`to_xml()` function)
+- Use Json Easly
 
 ## Uncoming Features
 
-- Clear json
+- Json Features : clear, to_csv
 - Propose in issues
 
 ## Changelog
 
-### V 1.0.0 - 12/02/2020 (LATEST)
+### V 1.0.0 - XX/XX/XX (INDEV)
 
 - First version

@@ -3,24 +3,24 @@
  
 from setuptools import setup, find_packages
 
-import jsonutils
+import gen-utilities
 
 setup(
 
-    name='jsonutils3',
+    name='gen-utilities',
 
-    version=jsonutils.__version__,
+    version=gen-utilities.__version__,
 
     packages=find_packages(),
     author="LavaPower",
     author_email="lavapower84@gmail.com",
-    description="A lib to use json easly.",
+    description="A lib to code in python easily.",
     long_description_content_type="text/markdown",
     long_description=open('README.md').read(),
 
     include_package_data=True,
 
-    url='http://github.com/LavaPower/jsonutils',
+    url='http://github.com/LavaPower/gen-utilities',
 
     # https://pypi.python.org/pypi?%3Aaction=list_classifiers.
     classifiers=[
