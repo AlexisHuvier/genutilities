@@ -1,10 +1,10 @@
 import unittest
-import gen-utilities
+from genutilities import json
 
 
 class JsonObjectTests(unittest.TestCase):
     def setUp(self):
-        self.obj = gen-utilities.JsonObject("tests/test.json", {"config": "default"}, saved_destroy=False)
+        self.obj = json.JsonObject("tests/test.json", {"config": "default"}, saved_destroy=False)
 
     def test_obj(self):
         self.assertEqual(str(self.obj), '{\n    "config": "other"\n}')
@@ -20,7 +20,7 @@ class JsonObjectTests(unittest.TestCase):
 
     def test_to_xml(self):
         self.assertEqual(self.obj.to_xml(), '<?xml version="1.0" encoding="UTF-8"?>\n<root>\n   <config>other</config>\n</root>')
-        o2 = gen-utilities.JsonObject("doesnt_be_saved.json", { 
+        o2 = json.JsonObject("doesnt_be_saved.json", { 
             "config": "other",
             "joueurs": {
                 "michel": 3
