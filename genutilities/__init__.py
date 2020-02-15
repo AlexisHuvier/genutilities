@@ -1,3 +1,3 @@
-from genutilities import json, string
+from genutilities import json, string, dictionnary, lists
 
 __version__ = "0.0.1"
