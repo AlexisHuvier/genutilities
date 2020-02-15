@@ -33,3 +33,15 @@ class JsonObjectTests(unittest.TestCase):
             ]
         }, saved_destroy=False)
         self.assertEqual(o2.to_xml(), '<?xml version="1.0" encoding="UTF-8"?>\n<root>\n   <config>other</config>\n   <joueurs>\n      <michel>3</michel>\n   </joueurs>\n   <score>\n      <element>\n         <oui>non</oui>\n      </element>\n      <element>non</element>\n   </score>\n</root>')
+    
+    def test_clear(self):
+        obj = json.JsonObject("osef.json", {"test": "oui"}, saved_destroy=False)
+        self.assertEqual(obj.dic, {"test": "oui"})
+        obj.clear()
+        self.assertEqual(obj.dic, {})
+    
+    def test_set_dict(self):
+        obj = json.JsonObject("osef.json", {"test": "oui"}, saved_destroy=False)
+        self.assertEqual(obj.dic, {"test": "oui"})
+        obj.set_dict({"oui": "test"})
+        self.assertEqual(obj.dic, {"oui": "test"})

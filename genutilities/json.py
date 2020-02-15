@@ -89,6 +89,12 @@ class JsonObject:
         xml.extend(self.__to_xml(root_name, element_name, self.dic))
         return "\n".join(xml)
 
+    def clear(self):
+        self.dic = {}
+    
+    def set_dict(self, dic: dict):
+        self.dic = dic
+    
     def save(self):
         with open(self.file, "w") as f:
             json.dump(self.dic, f, indent=4)
